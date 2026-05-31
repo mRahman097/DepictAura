@@ -2480,6 +2480,25 @@ button { cursor: pointer; }
     display: flex;
   }
 
+  .hero {
+    flex-direction: column;
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem;
+    min-height: auto;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    padding-inline: 1.25rem;
+  }
+
+  .hero__showreel {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1.25rem;
+  }
+
   .hero__title {
     font-size: clamp(2.25rem, 8vw, 3.5rem);
   }
@@ -2575,8 +2594,9 @@ button { cursor: pointer; }
   }
 
   .hero {
-    padding-top: 5rem;
-    min-height: 100svh;
+    padding-top: 5.5rem;
+    padding-bottom: 2.5rem;
+    min-height: auto;
   }
 
   .hero__title {
@@ -2584,8 +2604,28 @@ button { cursor: pointer; }
   }
 
   .hero__stats {
-    flex-direction: column;
-    gap: 1.25rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__stat {
+    flex: 1 1 0px;
+    min-width: 0;
+  }
+
+  .hero__stat-value {
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem) !important;
+  }
+
+  .hero__stat-label {
+    font-size: clamp(0.5rem, 2vw, 0.65rem) !important;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
   }
 
   .hero__showreel-wrapper {
