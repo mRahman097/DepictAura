@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DepictAura — Premium Video Editing Agency</title>
+  <meta name="description"
+    content="DepictAura is a premium video editing agency specializing in Wedding Films, Video Editing, and 2D Motion Graphics. We bring your vision to life." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">🎬</span>
+        DepictAura
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services" class="nav__link" data-nav>Services</a></li>
+        <li><a href="#portfolio" class="nav__link" data-nav>Portfolio</a></li>
+        <li><a href="#process" class="nav__link" data-nav>Process</a></li>
+        <li><a href="#team" class="nav__link" data-nav>Team</a></li>
+        <li><a href="#testimonials" class="nav__link" data-nav>Reviews</a></li>
+        <li><a href="#contact" class="nav__cta">Book a Call →</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero section" id="hero">
+    <!-- Background Growth Thread (Green Curve with Dots, Blurred) -->
+    <div class="bg-growth-thread">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Thread line: cubic bezier curve for a very smooth rise from bottom left to top right -->
+        <path d="M -20 820 Q 300 780, 550 500 T 1000 320 T 1460 80" class="growth-thread-line" />
+        
+        <!-- Connected Dots in the path of the curve -->
+        <!-- Dot 1 -->
+        <circle cx="200" cy="760" r="10" class="growth-thread-dot--glow" />
+        <circle cx="200" cy="760" r="4" class="growth-thread-dot" />
+        
+        <!-- Dot 2 -->
+        <circle cx="550" cy="500" r="12" class="growth-thread-dot--glow" />
+        <circle cx="550" cy="500" r="5" class="growth-thread-dot" />
+
+        <!-- Dot 3 -->
+        <circle cx="1000" cy="320" r="14" class="growth-thread-dot--glow" />
+        <circle cx="1000" cy="320" r="6" class="growth-thread-dot" />
+
+        <!-- Dot 4 -->
+        <circle cx="1300" cy="180" r="11" class="growth-thread-dot--glow" />
+        <circle cx="1300" cy="180" r="4" class="growth-thread-dot" />
+      </svg>
+    </div>
+
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Now Accepting New Projects
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line">producing videos</span>
+        <span class="hero__title-line">that generate</span>
+        <span style="display: inline-flex; align-items: baseline; gap: 0.22em; vertical-align: bottom;">
+          <span class="hero__title-line" style="display: inline; margin: 0; padding: 0;">more</span>
+          <span class="hero__title-scroller">
+            <span class="scroller__words">
+              <span class="scroller__word">
+                Leads
+                <svg class="scroller__underline" viewBox="0 0 100 10" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 4 7 C 30 4, 70 8, 96 5" />
+                </svg>
+              </span>
+              <span class="scroller__word">
+                Bookings
+                <svg class="scroller__underline" viewBox="0 0 100 10" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 4 6 C 25 8, 65 4, 96 7" />
+                </svg>
+              </span>
+              <span class="scroller__word">
+                Sales
+                <svg class="scroller__underline" viewBox="0 0 100 10" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 4 7 C 35 5, 75 9, 96 6" />
+                </svg>
+              </span>
+              <span class="scroller__word">
+                Leads
+                <svg class="scroller__underline" viewBox="0 0 100 10" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 4 7 C 30 4, 70 8, 96 5" />
+                </svg>
+              </span>
+            </span>
+          </span>
+        </span>
+      </h1>
+
+      <p class="hero__subtitle">
+        A premium video editing agency with specialized teams for Wedding Films,
+        Video Editing, and 2D Motion Graphics. We don't just edit — we tell stories.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--primary">
+          See Our Work
+          <span class="btn__icon">→</span>
+        </a>
+        <a href="#contact" class="btn btn--ghost">
+          Get a Free Quote
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-number" data-count="200" data-suffix="+">0</div>
+          <div class="hero__stat-label">Videos Delivered</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number" data-count="85" data-suffix="+">0</div>
+          <div class="hero__stat-label">Happy Clients</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number" data-count="5" data-suffix="+">0</div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number" data-count="15" data-suffix="">0</div>
+          <div class="hero__stat-label">Team Members</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Showreel Area -->
+    <a href="https://www.youtube.com/watch?v=Pd2fmA3YojI" target="_blank" rel="noopener"
+      class="portfolio-card hero__showreel reveal" style="text-align: left; display: block;">
+      <div class="portfolio-card__thumb">
+        <img src="images/showreel-depictaura.jpg" alt="DepictAura Media — 2026 Agency Showreel" loading="lazy" />
+        <div class="portfolio-card__image-overlay">
+          <div class="portfolio-card__image-play"></div>
+        </div>
+      </div>
+      <div class="portfolio-card__meta">
+        <span class="portfolio-card__badge portfolio-card__badge--motion">Showreel</span>
+        <h3 class="portfolio-card__title">DepictAura Media — 2026 Agency Showreel</h3>
+      </div>
+    </a>
+
+    <!-- Decorative Visual -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__visual-ring hero__visual-ring--1"></div>
+      <div class="hero__visual-ring hero__visual-ring--2"></div>
+      <div class="hero__visual-ring hero__visual-ring--3"></div>
+      <div class="hero__visual-dot hero__visual-dot--1"></div>
+      <div class="hero__visual-dot hero__visual-dot--2"></div>
+      <div class="hero__visual-dot hero__visual-dot--3"></div>
+    </div>
+  </section>
+
+  <!-- Trusted By Marquee -->
+  <div class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-track">
+        <div class="marquee-track__item"><span>🎬 Wedding Films</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>🎨 Video Editing</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>✏️ 2D Motion Graphics</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>🎥 Color Grading</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>🔊 Sound Design</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>✨ VFX & Compositing</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-track__item"><span>🎬 Wedding Films</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>🎨 Video Editing</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>✏️ 2D Motion Graphics</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>🎥 Color Grading</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>🔊 Sound Design</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+        <div class="marquee-track__item"><span>✨ VFX & Compositing</span></div>
+        <div class="marquee-track__item"><span>✦</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== SERVICES ======== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="gradient-divider"></div>
+      <span class="section__label reveal">What We Deliver</span>
+      <h2 class="section__title reveal reveal--delay-1">Three crafts. One agency.</h2>
+      <p class="section__subtitle reveal reveal--delay-2">
+        Each category is handled by a dedicated team of specialists — so your project
+        gets the focused expertise it deserves.
+      </p>
+
+      <div class="services__grid">
+        <!-- Service 1: Wedding Films -->
+        <div class="glass-card service-card reveal reveal--delay-1">
+          <div class="service-card__number">01</div>
+          <div class="service-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Glow Base Circle -->
+              <circle cx="24" cy="24" r="22" stroke="rgba(236,72,153,0.4)" stroke-width="1.5"
+                fill="rgba(236,72,153,0.08)" />
+              <!-- Cinematic Movie Reels -->
+              <circle cx="20" cy="16" r="4.5" fill="rgba(236,72,153,0.15)" stroke="rgba(236,72,153,0.6)"
+                stroke-width="1.5" />
+              <circle cx="29" cy="16" r="4.5" fill="rgba(236,72,153,0.15)" stroke="rgba(236,72,153,0.6)"
+                stroke-width="1.5" />
+              <circle cx="20" cy="16" r="1.5" fill="rgba(236,72,153,0.5)" />
+              <circle cx="29" cy="16" r="1.5" fill="rgba(236,72,153,0.5)" />
+              <!-- Camera Body -->
+              <rect x="15" y="21" width="18" height="11" rx="2" fill="none" stroke="rgba(236,72,153,0.6)"
+                stroke-width="1.5" />
+              <path d="M33 24.5l5-3.5v10l-5-3.5v-3z" fill="rgba(236,72,153,0.4)" stroke="rgba(236,72,153,0.6)"
+                stroke-width="1.5" stroke-linejoin="round" />
+              <!-- Elegant Heart inside the Camera (symbolizing Wedding Film) -->
+              <path d="M24 25.2c-.4-.5-1-.5-1.4 0-.4.4-.4 1 0 1.4l1.4 1.4 1.4-1.4c.4-.4.4-1 0-1.4-.4-.5-1-.5-1.4 0z"
+                fill="rgba(236,72,153,0.7)" />
+              <!-- Magical Sparkles -->
+              <path d="M11 15l1 1 1-1-1-1-1 1z" fill="rgba(236,72,153,0.5)" />
+              <path d="M36 12l1 1 1-1-1-1-1 1z" fill="rgba(236,72,153,0.8)" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Wedding Films</h3>
+          <p class="service-card__desc">
+            Cinematic wedding edits that capture every emotion — from the first look to
+            the last dance. Color graded, sound designed, and crafted with heart.
+          </p>
+          <ul class="service-card__features">
+            <li>Cinematic Color Grading</li>
+            <li>Drone Footage Integration</li>
+            <li>Same-Day Highlight Reels</li>
+            <li>Full Ceremony & Reception</li>
+          </ul>
+          <div style="display: flex; gap: 1.5rem; margin-top: auto; flex-wrap: wrap;">
+            <a href="#portfolio" class="service-card__link" style="margin-top: 0;">View Wedding Work →</a>
+            <a href="#" class="service-card__link" id="viewPackagesBtn" style="margin-top: 0; color: var(--pink);">View
+              Packages →</a>
+          </div>
+        </div>
+
+        <!-- Service 2: Video Editing -->
+        <div class="glass-card service-card reveal reveal--delay-2">
+          <div class="service-card__number">02</div>
+          <div class="service-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Glow Base Circle -->
+              <circle cx="24" cy="24" r="22" stroke="rgba(147,51,234,0.4)" stroke-width="1.5"
+                fill="rgba(147,51,234,0.08)" />
+              <!-- Horizontal Filmstrip/Timeline Track -->
+              <rect x="11" y="24" width="26" height="8" rx="1.5" fill="none" stroke="rgba(147,51,234,0.5)"
+                stroke-width="1.5" />
+              <circle cx="15" cy="28" r="1" fill="rgba(147,51,234,0.6)" />
+              <circle cx="20" cy="28" r="1" fill="rgba(147,51,234,0.6)" />
+              <circle cx="25" cy="28" r="1" fill="rgba(147,51,234,0.6)" />
+              <circle cx="30" cy="28" r="1" fill="rgba(147,51,234,0.6)" />
+              <circle cx="35" cy="28" r="1" fill="rgba(147,51,234,0.6)" />
+              <!-- Audio Waveform / Speed Cut Indicators (top-left) -->
+              <path d="M13 15v5M16 12v8M19 14v4" stroke="rgba(147,51,234,0.4)" stroke-width="1.2"
+                stroke-linecap="round" />
+              <!-- Editing Scissors -->
+              <g stroke="rgba(147,51,234,0.7)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">
+                <!-- Pivot Point -->
+                <circle cx="24" cy="20" r="1" fill="rgba(147,51,234,0.8)" stroke="none" />
+                <!-- Blade Handles -->
+                <circle cx="18" cy="14" r="2.5" fill="rgba(147,51,234,0.15)" />
+                <circle cx="30" cy="14" r="2.5" fill="rgba(147,51,234,0.15)" />
+                <!-- Diagonal Blades cutting the track -->
+                <path d="M30 14l-6 6-8 8" />
+                <path d="M18 14l6 6 8 8" />
+              </g>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Video Editing <span
+              style="font-size: 0.72em; font-weight: normal; color: var(--text-secondary); opacity: 0.85; margin-left: 0.35rem; white-space: nowrap;">(Short
+              & Long form)</span></h3>
+          <p class="service-card__desc">
+            Professional video editing that tells your story. From high-energy Reels, TikToks, and Shorts to polished
+            long-form YouTube videos, documentaries, and brand campaigns.
+          </p>
+          <ul class="service-card__features">
+            <li>Short-form Reels & TikToks</li>
+            <li>Long-form YouTube & Promos</li>
+            <li>Cinematic Sound Design</li>
+            <li>Advanced Color Grading</li>
+          </ul>
+          <a href="#portfolio" class="service-card__link">View Video Work →</a>
+        </div>
+
+        <!-- Service 3: 2D Motion Graphics -->
+        <div class="glass-card service-card reveal reveal--delay-3">
+          <div class="service-card__number">03</div>
+          <div class="service-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Glow Base Circle -->
+              <circle cx="24" cy="24" r="22" stroke="rgba(6,182,212,0.4)" stroke-width="1.5"
+                fill="rgba(6,182,212,0.08)" />
+              <!-- Bezier Curve Motion Trail -->
+              <path d="M12 28c8-10 16-10 24 0" fill="none" stroke="rgba(6,182,212,0.6)" stroke-width="1.8"
+                stroke-linecap="round" />
+              <path d="M13 31s5-14 12-14 10 14 12 14" fill="none" stroke="rgba(6,182,212,0.3)" stroke-width="1"
+                stroke-dasharray="3 3" />
+              <!-- Pen Tool Point / Vector Anchor -->
+              <g stroke="rgba(6,182,212,0.75)" stroke-width="1.2">
+                <!-- Anchor Handle Bar -->
+                <path d="M18 18h12" />
+                <!-- Anchor Handles -->
+                <rect x="17" y="17" width="2" height="2" fill="rgba(6,182,212,0.8)" stroke="none" />
+                <rect x="29" y="17" width="2" height="2" fill="rgba(6,182,212,0.8)" stroke="none" />
+                <circle cx="24" cy="18" r="1.5" fill="white" />
+                <!-- Pen Tool Nib -->
+                <path d="M24 18l3-6h-6l3 6z" fill="rgba(6,182,212,0.35)" stroke-linejoin="round" />
+              </g>
+              <!-- Pop/Motion Shapes -->
+              <path d="M14 14l1.5 1.5L17 14l-1.5-1.5z" fill="rgba(6,182,212,0.6)" />
+              <circle cx="34" cy="16" r="2.5" fill="rgba(6,182,212,0.4)" stroke="rgba(6,182,212,0.6)"
+                stroke-width="1" />
+              <path d="M33 30l3-3 1 4z" fill="rgba(6,182,212,0.5)" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">2D Motion Graphics</h3>
+          <p class="service-card__desc">
+            Eye-catching 2D animations that bring your ideas to life. From bespoke character explainer videos and logo
+            animation to sleek product walkthroughs and kinetic typography.
+          </p>
+          <ul class="service-card__features">
+            <li>Logo & Brand Animations</li>
+            <li>Character Explainer Videos</li>
+            <li>Kinetic Typography & Titles</li>
+            <li>Script, Storyboard & Voiceover</li>
+          </ul>
+          <a href="#portfolio" class="service-card__link">View Motion Work →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PORTFOLIO ======== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="gradient-divider"></div>
+      <span class="section__label reveal">Our Work</span>
+      <h2 class="section__title reveal reveal--delay-1">Videos we've shipped.</h2>
+      <p class="section__subtitle reveal reveal--delay-2">
+        A curated selection from our three specialties. Click to preview any project.
+      </p>
+
+      <!-- Filter Tabs -->
+      <div class="portfolio__filters reveal">
+        <button class="portfolio__filter portfolio__filter--active" data-filter="all">All Work</button>
+        <button class="portfolio__filter" data-filter="wedding">Wedding Films</button>
+        <button class="portfolio__filter" data-filter="motion">Video Editing</button>
+        <button class="portfolio__filter" data-filter="explainer">2D Motion Graphics</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio__grid">
+        <!-- Wedding 1 - Featured -->
+        <a href="https://www.youtube.com/watch?v=xepBSbbXpEA" target="_blank" rel="noopener"
+          class="portfolio-card portfolio-card--featured" data-category="wedding">
+          <div class="portfolio-card__thumb">
+            <img src="images/kiera-grant-depictaura.jpg" alt="Cheyenne & Derek — USA Wedding Film" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--wedding">Wedding Film</span>
+            <h3 class="portfolio-card__title">Cheyenne & Derek — USA</h3>
+          </div>
+        </a>
+
+        <!-- Motion 1 -->
+        <a href="https://youtu.be/-e5UU3_bkfY" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="motion">
+          <div class="portfolio-card__thumb">
+            <img src="images/saas-highlander-depictaura.jpg" alt="Saas | Highlander" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--motion">Video Editing</span>
+            <h3 class="portfolio-card__title">Saas | Highlander</h3>
+          </div>
+        </a>
+
+        <!-- Explainer 1 -->
+        <a href="https://www.youtube.com/watch?v=vz6h2thFgxo" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="explainer">
+          <div class="portfolio-card__thumb">
+            <img src="images/escape-plan-depictaura.jpg" alt="Make sure you have an escape plan" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--explainer">2D Motion Graphics</span>
+            <h3 class="portfolio-card__title">Make sure you have an escape plan</h3>
+          </div>
+        </a>
+
+        <!-- Wedding 2 -->
+        <a href="https://www.youtube.com/watch?v=wGpXZWgW99A" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="wedding">
+          <div class="portfolio-card__thumb">
+            <img src="images/bodrul-anisha-depictaura.jpg" alt="Bodrul & Anisha — UK Muslim Wedding Film"
+              loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--wedding">Wedding Film</span>
+            <h3 class="portfolio-card__title">Bodrul & Anisha — UK Muslim</h3>
+          </div>
+        </a>
+
+        <!-- Motion 2 - Featured -->
+        <a href="https://www.youtube.com/watch?v=mWItrjtisNw" target="_blank" rel="noopener"
+          class="portfolio-card portfolio-card--featured" data-category="motion">
+          <div class="portfolio-card__thumb">
+            <img src="images/saas-flowspace-depictaura.png" alt="Flowspace | SaaS Motion Graphics" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--motion">Video Editing</span>
+            <h3 class="portfolio-card__title">Flowspace | SaaS Motion Graphics</h3>
+          </div>
+        </a>
+
+        <!-- Explainer 2 -->
+        <a href="https://www.youtube.com/watch?v=tMpbSTMcGkk" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="explainer">
+          <div class="portfolio-card__thumb">
+            <img src="images/smoke-alarms-depictaura.jpg" alt="Test your smoke alarms" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--explainer">2D Motion Graphics</span>
+            <h3 class="portfolio-card__title">Test your smoke alarms</h3>
+          </div>
+        </a>
+
+        <!-- Wedding 3 -->
+        <a href="https://www.youtube.com/watch?v=9QPCC9uB1TE" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="wedding">
+          <div class="portfolio-card__thumb">
+            <img src="images/irie-catherine-depictaura.jpg" alt="Irie & Catherine — UK White Wedding Film"
+              loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--wedding">Wedding Film</span>
+            <h3 class="portfolio-card__title">Irie & Catherine — UK White</h3>
+          </div>
+        </a>
+
+        <!-- Motion 3 -->
+        <a href="https://www.youtube.com/watch?v=PvX6okLsw8g" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="motion">
+          <div class="portfolio-card__thumb">
+            <img src="images/saas-fintech-depictaura.png" alt="SaaS | FinTech" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--motion">Video Editing</span>
+            <h3 class="portfolio-card__title">SaaS | FinTech</h3>
+          </div>
+        </a>
+
+        <!-- Explainer 3 -->
+        <a href="https://www.youtube.com/watch?v=-pLR5zJZUdU" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="explainer">
+          <div class="portfolio-card__thumb">
+            <img src="images/put-a-lid-on-it-depictaura.jpg" alt="Put a lid on it" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--explainer">2D Motion Graphics</span>
+            <h3 class="portfolio-card__title">Put a lid on it</h3>
+          </div>
+        </a>
+
+        <!-- Explainer 4 -->
+        <a href="https://www.youtube.com/watch?v=-pLR5zJZUdU" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="explainer">
+          <div class="portfolio-card__thumb">
+            <img src="images/put-a-lid-on-it-2-depictaura.jpg" alt="Put a lid on it — Edition II" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--explainer">2D Motion Graphics</span>
+            <h3 class="portfolio-card__title">Put a lid on it — Edition II</h3>
+          </div>
+        </a>
+
+        <!-- Explainer 5 -->
+        <a href="https://www.youtube.com/watch?v=TpSoZuhK7ks" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="explainer">
+          <div class="portfolio-card__thumb">
+            <img src="images/never-leave-outdoor-depictaura.jpg" alt="Never leave your outdoor" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--explainer">2D Motion Graphics</span>
+            <h3 class="portfolio-card__title">Never leave your outdoor</h3>
+          </div>
+        </a>
+
+        <!-- Wedding 4 -->
+        <a href="https://www.youtube.com/watch?v=PkHJxcqUfTQ" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="wedding">
+          <div class="portfolio-card__thumb">
+            <img src="images/omar-arooj-depictaura.jpg" alt="Omar & Arooj — UK Muslim Wedding Film" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--wedding">Wedding Film</span>
+            <h3 class="portfolio-card__title">Omar & Arooj — UK Muslim</h3>
+          </div>
+        </a>
+
+        <!-- Wedding 5 -->
+        <a href="https://www.youtube.com/watch?v=isOS-Jqxpm0" target="_blank" rel="noopener" class="portfolio-card"
+          data-category="wedding">
+          <div class="portfolio-card__thumb">
+            <img src="images/cheyenne-derek-depictaura.jpg" alt="Kiera & Grant — Polish Wedding Film" loading="lazy" />
+            <div class="portfolio-card__image-overlay">
+              <div class="portfolio-card__image-play"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__meta">
+            <span class="portfolio-card__badge portfolio-card__badge--wedding">Wedding Film</span>
+            <h3 class="portfolio-card__title">Kiera & Grant — Polish</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROCESS ======== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="gradient-divider"></div>
+      <span class="section__label reveal">How We Work</span>
+      <h2 class="section__title reveal reveal--delay-1">From brief to final cut.</h2>
+      <p class="section__subtitle reveal reveal--delay-2">
+        A proven 4-step process that keeps everything on track, on time, and on brand.
+      </p>
+
+      <div class="process__track">
+        <div class="process__step reveal">
+          <div class="process__step-number">01</div>
+          <div class="process__step-card">
+            <div class="process__step-icon">📋</div>
+            <h3 class="process__step-title">Discovery & Brief</h3>
+            <p class="process__step-desc">We understand your vision, audience, and goals. You share raw footage or a
+              concept — we map out the creative direction.</p>
+          </div>
+        </div>
+
+        <div class="process__step reveal reveal--delay-1">
+          <div class="process__step-number">02</div>
+          <div class="process__step-card">
+            <div class="process__step-icon">🎨</div>
+            <h3 class="process__step-title">Storyboard & Script</h3>
+            <p class="process__step-desc">Our team creates a detailed storyboard, selects the best takes, and plans the
+              visual narrative structure.</p>
+          </div>
+        </div>
+
+        <div class="process__step reveal reveal--delay-2">
+          <div class="process__step-number">03</div>
+          <div class="process__step-card">
+            <div class="process__step-icon">🎬</div>
+            <h3 class="process__step-title">Edit & Refine</h3>
+            <p class="process__step-desc">Our editors bring it to life — color grading, sound design, motion graphics,
+              and transitions. Two rounds of revisions included.</p>
+          </div>
+        </div>
+
+        <div class="process__step reveal reveal--delay-3">
+          <div class="process__step-number">04</div>
+          <div class="process__step-card">
+            <div class="process__step-icon">🚀</div>
+            <h3 class="process__step-title">Deliver & Launch</h3>
+            <p class="process__step-desc">Final export in all formats you need. We provide platform-optimized versions
+              for YouTube, Instagram, TikTok, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TEAM ======== -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="gradient-divider"></div>
+      <span class="section__label reveal">Our Crew</span>
+      <h2 class="section__title reveal reveal--delay-1">Meet the editors behind the magic.</h2>
+      <p class="section__subtitle reveal reveal--delay-2">
+        A specialized team for each category — every project gets a dedicated editor
+        who lives and breathes their craft.
+      </p>
+
+      <!-- Founders Row (Extra Attention, Center Aligned) -->
+      <div class="team__founders reveal">
+        <!-- Syed Hameem -->
+        <div class="team-card team-card--featured team-card--hameem reveal">
+          <div class="team-card__photo">
+            <img src="images/team-hameem.png" alt="Syed Hameem" loading="lazy" />
+          </div>
+          <h3 class="team-card__name">Syed Hameem</h3>
+          <p class="team-card__role">Founder & CEO</p>
+          <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+            <div class="team-card__specialty">Motion Design</div>
+            <div class="team-card__specialty">SaaS</div>
+            <div class="team-card__specialty">Short-form content</div>
+          </div>
+
+
+        </div>
+
+        <!-- Robin M. Rahman -->
+        <div class="team-card team-card--featured team-card--robin reveal">
+          <div class="team-card__photo">
+            <img src="images/team-robin.jpg" alt="Robin M. Rahman" loading="lazy" />
+          </div>
+          <h3 class="team-card__name">Robin M. Rahman</h3>
+          <p class="team-card__role">Co-Founder & Creative Director</p>
+          <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+            <div class="team-card__specialty">Wedding Films</div>
+            <div class="team-card__specialty">Long-form content</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Extended Team Grid -->
+      <div class="team__grid">
+        <!-- Sadia Ahmed -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #ec4899, #f472b6);">SA
+            </div>
+          </div>
+          <h3 class="team-card__name">Sadia Ahmed</h3>
+          <p class="team-card__role">Senior Wedding Editor</p>
+          <div class="team-card__specialty">Wedding Films</div>
+        </div>
+
+        <!-- Tanvir Hossain -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #5b21b6, #a78bfa);">TH
+            </div>
+          </div>
+          <h3 class="team-card__name">Tanvir Hossain</h3>
+          <p class="team-card__role">Senior Video Editor</p>
+          <div class="team-card__specialty">Video Editing</div>
+        </div>
+
+        <!-- Nusrat Islam -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #155e75, #06b6d4);">NI
+            </div>
+          </div>
+          <h3 class="team-card__name">Nusrat Islam</h3>
+          <p class="team-card__role">Senior 2D Animator</p>
+          <div class="team-card__specialty">2D Motion Graphics</div>
+        </div>
+
+        <!-- Fahim Mahmud -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #78350f, #f59e0b);">FM
+            </div>
+          </div>
+          <h3 class="team-card__name">Fahim Mahmud</h3>
+          <p class="team-card__role">Senior Colorist</p>
+          <div class="team-card__specialty">Color Grading</div>
+        </div>
+
+        <!-- Anika Rahman -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #1e3a5f, #3b82f6);">AR
+            </div>
+          </div>
+          <h3 class="team-card__name">Anika Rahman</h3>
+          <p class="team-card__role">Junior Sound Designer</p>
+          <div class="team-card__specialty">Sound Design</div>
+        </div>
+
+        <!-- Zayan Karim -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #065f46, #34d399);">ZK
+            </div>
+          </div>
+          <h3 class="team-card__name">Zayan Karim</h3>
+          <p class="team-card__role">Junior Video Editor</p>
+          <div class="team-card__specialty">Video Editing</div>
+        </div>
+
+        <!-- Mariam Yasmin -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #9f1239, #fb7185);">MY
+            </div>
+          </div>
+          <h3 class="team-card__name">Mariam Yasmin</h3>
+          <p class="team-card__role">Junior Motion Designer</p>
+          <div class="team-card__specialty">2D Animation</div>
+        </div>
+
+        <!-- Asif Chowdhury -->
+        <div class="team-card reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #374151, #9ca3af);">AC
+            </div>
+          </div>
+          <h3 class="team-card__name">Asif Chowdhury</h3>
+          <p class="team-card__role">Post-Production Coordinator</p>
+          <div class="team-card__specialty">Post-Production</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="gradient-divider"></div>
+      <span class="section__label reveal">Client Reviews</span>
+      <h2 class="section__title reveal reveal--delay-1">What our clients say.</h2>
+      <p class="section__subtitle reveal reveal--delay-2">
+        Real feedback from brands and couples who trusted us with their stories.
+      </p>
+    </div>
+
+    <!-- Testimonials Marquee Track -->
+    <div class="testimonials__track">
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">They turned our raw wedding footage into a cinematic masterpiece. We've
+          watched our highlight reel over 50 times and still cry every time.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #ec4899, #f472b6); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            S&J</div>
+          <div>
+            <div class="testimonial-card__name">Sarah & James</div>
+            <div class="testimonial-card__company">Wedding Couple — Tuscany</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">Our product launch video got 2M views in the first week. The motion graphics
+          team understood our brand instantly. Fastest turnaround we've ever seen.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #7c3aed, #a78bfa); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            MR</div>
+          <div>
+            <div class="testimonial-card__name">Marcus Rivera</div>
+            <div class="testimonial-card__company">CEO, NovaTech</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">The explainer video simplified our entire SaaS platform into 90 seconds.
+          Sign-ups increased by 40% after adding it to our landing page.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #0891b2, #22d3ee); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            LP</div>
+          <div>
+            <div class="testimonial-card__name">Lisa Park</div>
+            <div class="testimonial-card__company">Product Lead, FinFlow</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">Felt like we hired in-house, not an agency. Big difference. They treated our
+          project like it was their own brand.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #059669, #34d399); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            AK</div>
+          <div>
+            <div class="testimonial-card__name">Arif Khan</div>
+            <div class="testimonial-card__company">Founder, GreenPlanet</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">We've worked with 5 different video teams. DepictAura is the only one we
+          kept. Quality, speed, and communication — they nail all three.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #dc2626, #f87171); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            RH</div>
+          <div>
+            <div class="testimonial-card__name">Rachel Hughes</div>
+            <div class="testimonial-card__company">Marketing Director, Pulse Fitness</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">They turned our raw wedding footage into a cinematic masterpiece. We've
+          watched our highlight reel over 50 times and still cry every time.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #ec4899, #f472b6); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            S&J</div>
+          <div>
+            <div class="testimonial-card__name">Sarah & James</div>
+            <div class="testimonial-card__company">Wedding Couple — Tuscany</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">Our product launch video got 2M views in the first week. The motion graphics
+          team understood our brand instantly. Fastest turnaround we've ever seen.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #7c3aed, #a78bfa); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            MR</div>
+          <div>
+            <div class="testimonial-card__name">Marcus Rivera</div>
+            <div class="testimonial-card__company">CEO, NovaTech</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__quote">The explainer video simplified our entire SaaS platform into 90 seconds.
+          Sign-ups increased by 40% after adding it to our landing page.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"
+            style="background: linear-gradient(135deg, #0891b2, #22d3ee); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; color: white;">
+            LP</div>
+          <div>
+            <div class="testimonial-card__name">Lisa Park</div>
+            <div class="testimonial-card__company">Product Lead, FinFlow</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- ======== CTA + CONTACT ======== -->
+  <section class="section cta" id="contact">
+    <div class="container">
+      <div class="gradient-divider"></div>
+
+      <!-- CTA Card -->
+      <div class="cta__card reveal">
+        <h2 class="cta__title">Ready to bring your <span>vision to life?</span></h2>
+        <p class="cta__subtitle">Whether it's a dream wedding, a social campaign, or motion graphics that convert —
+          we've got
+          a team ready for you.</p>
+        <div class="cta__actions">
+          <a href="#contactForm" class="btn btn--primary">Start Your Project <span class="btn__icon">→</span></a>
+          <a href="https://wa.me/436603113101" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">WhatsApp
+            Us</a>
+        </div>
+      </div>
+
+      <!-- Contact Info & Form Grid -->
+      <div class="contact__grid" style="margin-top: 4rem;">
+        <div class="contact__info reveal">
+          <div class="contact__info-item">
+            <div class="contact__info-icon">📧</div>
+            <div>
+              <div class="contact__info-label">Email</div>
+              <div class="contact__info-value">hello@depictaura.studio</div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">💬</div>
+            <div>
+              <div class="contact__info-label">WhatsApp</div>
+              <div class="contact__info-value">+43 660 3113101</div>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">📍</div>
+            <div>
+              <div class="contact__info-label">Location</div>
+              <div class="contact__info-value">Villach, Austria <span
+                  style="font-size: 0.85em; color: var(--text-muted); font-weight: normal; margin-left: 0.35rem;">(Secondary:
+                  Dhaka)</span></div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon">⏱️</div>
+            <div>
+              <div class="contact__info-label">Typical Turnaround</div>
+              <div class="contact__info-value">3-7 business days</div>
+            </div>
+          </div>
+
+          <div class="contact__socials">
+            <a href="#" class="contact__social-link" title="YouTube" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="#" class="contact__social-link" title="Instagram" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+            <a href="#" class="contact__social-link" title="Facebook" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="#" class="contact__social-link" title="Behance" aria-label="Behance">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.609.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.63.166-1.27.25-1.95.25H0V4.51h6.938v-.007zM6.545 10.16c.57 0 1.053-.15 1.44-.44.39-.29.58-.75.58-1.37 0-.35-.06-.64-.18-.87-.12-.23-.29-.42-.5-.56-.21-.13-.46-.23-.74-.29-.28-.06-.6-.09-.94-.09H3.22v3.63h3.326zm.19 5.36c.36 0 .7-.04 1.01-.13.31-.09.58-.22.81-.4.23-.17.41-.4.54-.68.13-.28.2-.62.2-1.02 0-.81-.24-1.4-.71-1.74-.48-.34-1.1-.51-1.85-.51H3.22v4.47h3.51zm9.79-5.37c-.34-.53-.84-.79-1.5-.79-.44 0-.8.09-1.08.26-.28.17-.51.39-.68.65-.17.26-.29.56-.35.88-.06.32-.1.63-.1.95h5.24c-.07-.88-.35-1.48-.7-2.01l.17.05zM22 13.7h-7.93c.06.95.37 1.66.9 2.12.53.45 1.2.68 2.01.68.58 0 1.1-.15 1.54-.46.44-.31.73-.65.87-1.02h2.73c-.47 1.34-1.18 2.3-2.14 2.87-.96.57-2.08.85-3.37.85-.92 0-1.76-.15-2.5-.45-.75-.3-1.38-.72-1.9-1.27-.52-.55-.92-1.21-1.19-1.98-.28-.77-.42-1.62-.42-2.55 0-.9.14-1.73.42-2.48.28-.75.68-1.4 1.19-1.95.51-.55 1.13-.97 1.85-1.27.72-.3 1.52-.45 2.39-.45.96 0 1.8.19 2.51.56.71.37 1.31.88 1.78 1.52.47.63.81 1.37 1.01 2.22.21.85.28 1.75.22 2.71v.35zm-3.64-6.34h-5.14v1.71h5.14V7.36z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal reveal--delay-1" id="contactForm">
+          <div class="contact-form__row">
+            <div class="contact-form__group">
+              <label for="contactName" class="contact-form__label">Name</label>
+              <input type="text" id="contactName" class="contact-form__input" placeholder="Your name" required />
+            </div>
+            <div class="contact-form__group">
+              <label for="contactEmail" class="contact-form__label">Email</label>
+              <input type="email" id="contactEmail" class="contact-form__input" placeholder="you@example.com"
+                required />
+            </div>
+          </div>
+          <div class="contact-form__group">
+            <label for="projectType" class="contact-form__label">Project Type</label>
+            <select id="projectType" class="contact-form__select">
+              <option value="" disabled selected>Select a category</option>
+              <option value="wedding">🎬 Wedding Film</option>
+              <option value="motion">🎨 Video Editing (Short & Long form)</option>
+              <option value="explainer">✏️ 2D Motion Graphics</option>
+              <option value="other">📦 Other / Custom</option>
+            </select>
+          </div>
+          <div class="contact-form__group">
+            <label for="contactMessage" class="contact-form__label">Tell us about your project</label>
+            <textarea id="contactMessage" class="contact-form__textarea"
+              placeholder="Describe your project, timeline, and any reference videos..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary contact-form__submit" style="justify-content:center;">
+            Get a Free Quote
+            <span class="btn__icon">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="footer__logo">
+        <span style="font-size: 1.5rem;">🎬</span>
+        DepictAura
+      </a>
+
+      <div class="footer__links">
+        <a href="#services" class="footer__link">Services</a>
+        <a href="#portfolio" class="footer__link">Portfolio</a>
+        <a href="#process" class="footer__link">Process</a>
+        <a href="#team" class="footer__link">Team</a>
+        <a href="#testimonials" class="footer__link">Reviews</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </div>
+
+      <div class="footer__socials">
+        <a href="#" class="footer__social" title="YouTube" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="#" class="footer__social" title="Instagram" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+          </svg>
+        </a>
+        <a href="#" class="footer__social" title="Facebook" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__copy">
+        © 2026 DepictAura. Crafted with passion & purple pixels. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== VIDEO MODAL ======== -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal__backdrop" id="modalBackdrop"></div>
+    <div class="video-modal__container glass-card">
+      <button class="video-modal__close" id="modalClose">✕</button>
+      <div class="modal__video-area">
+        <div class="modal__video-placeholder">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="28" stroke="rgba(192,132,252,0.4)" stroke-width="2"
+              fill="rgba(147,51,234,0.1)" />
+            <path d="M24 18l16 12-16 12V18z" fill="rgba(192,132,252,0.5)" />
+          </svg>
+          <p style="color:var(--text-muted);margin-top:1rem;font-size:0.9rem;">Video preview area — embed your videos
+            here</p>
+        </div>
+      </div>
+      <div class="modal__info">
+        <span class="portfolio__category-badge portfolio__category-badge--motion" id="modalCategory"></span>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== PACKAGE COMPARISON MODAL ======== -->
+  <div class="video-modal" id="packagesModal" style="z-index: 2000;">
+    <div class="video-modal__backdrop" id="packagesBackdrop"></div>
+    <div class="video-modal__container glass-card"
+      style="max-width: 900px; width: 95%; padding: 2.5rem; max-height: 90vh; overflow-y: auto; position: relative; border: 1px solid var(--border-glass);">
+      <button class="video-modal__close" id="packagesClose" aria-label="Close modal"
+        style="top: 1.5rem; right: 1.5rem; font-size: 1.8rem; background: none; border: none; color: var(--text-secondary); cursor: pointer; transition: color var(--transition-fast);">&times;</button>
+
+      <div style="margin-bottom: 2.5rem; text-align: center;">
+        <span class="portfolio-card__badge portfolio-card__badge--wedding"
+          style="background: rgba(236, 72, 153, 0.15); color: var(--pink);">Cinematography Packages</span>
+        <h2
+          style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem; letter-spacing: -0.02em;">
+          Wedding Film Packages</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">Compare our editing standards
+          and select your ideal scope.</p>
+      </div>
+
+      <div class="packages-table-wrapper"
+        style="overflow-x: auto; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); background: rgba(10, 8, 18, 0.6); backdrop-filter: blur(8px);">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left; min-width: 600px;">
+          <thead>
+            <tr style="border-bottom: 1px solid var(--border-subtle); background: rgba(168, 85, 247, 0.08);">
+              <th
+                style="padding: 1.25rem 1.5rem; font-weight: 600; color: var(--text-primary); font-family: var(--font-display); font-size: 1.05rem;">
+                Feature</th>
+              <th
+                style="padding: 1.25rem 1.5rem; font-weight: 600; color: var(--pink); font-family: var(--font-display); font-size: 1.05rem;">
+                Standard</th>
+              <th
+                style="padding: 1.25rem 1.5rem; font-weight: 600; color: var(--purple-300); font-family: var(--font-display); font-size: 1.05rem;">
+                Plus</th>
+              <th
+                style="padding: 1.25rem 1.5rem; font-weight: 600; color: var(--cyan); font-family: var(--font-display); font-size: 1.05rem;">
+                Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Target Event</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Single event / Half day</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Full day / Multi-event</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Multi-day / Full wedding</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Max Raw Footage</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 150 GB</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 250 GB</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 500 GB</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Highlight / Feature</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">3–5 Minutes</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">5–8 Minutes</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">10–15 Minutes</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Full Film (Doc Edit)
+              </td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 20 Minutes</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 60 Minutes</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 90 Minutes</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Social Teasers</td>
+              <td
+                style="padding: 1rem 1.5rem; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.85rem;">
+                ❌ None</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">1x (60 seconds)</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">2x (Vertical Reels)</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Color Grading</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Basic Correction</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Advanced (Signature Style)</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Premium + Look Dev</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Multicam Sync</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 2 Angles</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Up to 3 Angles</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">Unlimited Angles</td>
+            </tr>
+            <tr
+              style="border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Revisions</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">1 Round</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">2 Rounds</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary);">3 Rounds</td>
+            </tr>
+            <tr style="border-bottom: none; transition: background-color var(--transition-fast);">
+              <td style="padding: 1rem 1.5rem; font-weight: 500; color: var(--text-secondary);">Turnaround</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary); font-weight: 700; color: var(--pink);">7 Days
+              </td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary); font-weight: 700; color: var(--purple-300);">
+                14 Days</td>
+              <td style="padding: 1rem 1.5rem; color: var(--text-primary); font-weight: 700; color: var(--cyan);">21
+                Days</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="#contact" id="packagesSelectBtn" class="btn btn--primary btn--sm"
+          style="display: inline-flex; border-radius: var(--radius-full); padding: 0.75rem 2rem; font-weight: 600;">Book
+          Wedding Cinematography</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
